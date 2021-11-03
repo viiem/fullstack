@@ -1,0 +1,22 @@
+title 0.4 New note 2021
+
+Browser-Server HTTP GET httpsstudies.cs.helsinki.fiexampleappnotes
+Server--Browser HTML-code
+Browser-Server HTTP GET httpsstudies.cs.helsinki.fiexampleappmain.css
+Server--Browser main.css
+Browser--Server HTTP GET httpsstudies.cs.helsinki.fiexampleappmain.js
+Server--Browser main.js
+
+note over Browser
+Browser starts executing js-code
+that requests JSON data from server 
+end note
+
+Browser-Server HTTP GET httpsstudies.cs.helsinki.fiexampleappdata.json
+Server--Browser [{ content content of note, date 2021-03-11 }, ...]
+
+note over Browser
+browser executes the event handler
+that renders notes to display
+Browser-Server HTTP POST {note 'content of note'}
+end note
