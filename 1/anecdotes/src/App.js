@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 const App = () => {
   const [selected, setSelected] = useState(0);
-  const [votes, setVotes] = useState([0,0,0,0,0,0]);
+  const [votes, setVotes] = useState([0,0,0,0,0,0,0]);
 
  
   let newAnecdote;
